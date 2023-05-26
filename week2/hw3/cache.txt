@@ -1,0 +1,12 @@
+-もっとも直近にアクセスされた上位X個の<URL, Webページ>の組が保存できるデータ構造-
+
+アイデア: hashtableとlinked listを組み合わせる(分かりやすい具体例は画像参照)
+
+<hashtableがすること>
+key: URL (a.comなど)
+value: 対応するlinked listのノード
+->URLからWebページを取り出すこと
+
+<linked listがすること>
+URL, web page, 前のノード, 次のノードの情報を持つ
+-> web pageのアクセスされた順番の情報を保存することができる
